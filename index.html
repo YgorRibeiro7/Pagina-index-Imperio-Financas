@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+     <!-- GOOGLE  FONTS -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+     <!-- FIM GOOGLE  FONTES -->
+     <!-- BOOTSTRAP  ICONS-->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+     <!-- FIM BOOSTRAP ICONS-->
+ 
+    <title>Império Finanças </title>
+
+    <style>
+        /* html{
+
+            height: 500vh;
+        } */
+
+
+header.rolagem{
+
+   background-color: aliceblue; 
+   padding: 20px 4%;
+
+}
+
+
+header.rolagem a {
+
+color:#00a95cff ;
+
+}
+
+
+header.rolagem .imperio {
+
+color:black;
+
+}
+
+
+header.rolagem span {
+
+color: #00a95cff;
+
+}
+       
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: 'Poppins', sans-serif; */
+
+}  
+
+body{
+     background-color: #EDFDF2;  
+ }
+
+ header{
+
+    background-color: black;
+    padding: 20px 4%;  /* codigo alterado*/
+    box-shadow: 0px 0px 1px 1px white;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky; top: 0;
+    transition: 1.9s;
+   
+  
+ }
+
+ .imperio{
+    font-size: 40px;
+ }
+
+ /* .logo img{
+
+    width: 115px;
+    height: 110px;
+    margin-top: 5px;
+    margin-left: 10px;
+ } */
+
+ .logo {
+  display: flex;
+  align-items: center;
+  gap: 19px; /* Espaçamento entre a imagem e o título */
+}
+
+.logo img {
+  width: 80px;
+  height: auto;
+}
+
+ /*.menu-desktop{    
+ 
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+    margin-top: 50px; 
+    text-align: center;
+ 
+  
+}*/
+
+.menu-desktop {
+  flex-grow: 1;
+  text-align: center;
+  margin-right: 150px;
+}
+
+
+
+
+.menu-desktop a {
+  text-decoration: none;
+  color: white;
+  font-size: 22px;
+  margin: 0 20px;
+
+}
+
+
+header>.interface {
+
+display: flex;
+align-items: center;
+/* text-align: center; */
+/* justify-content: center; */
+justify-content: space-between;
+max-width: 1280px;
+margin: 0 auto;
+
+}
+
+header a {
+  /* todos os elementos que tem a letra A será modificado */
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  /*retirando as linhas sublinhado do texto*/
+  display: inline-block;
+  /*converti o cod para que possa funcionar o (transform: scale(1.2)) no header a:hover*/
+  transition: 0.5s;
+
+
+}
+
+ a:hover {
+  /*quando o usuario passar o mouse em cima, irá mudar de cor*/
+  color: #00a95cff;
+  transform: scale(1.2);
+  padding: 0 2px;
+  /*dá um zum no texto, porem para funcionar foi adiocnado um (display: inline-block) no header a{}*/
+
+}
+
+
+
+.interface {
+
+max-width: 1280px;
+margin: 0 auto;
+
+}
+ 
+
+button {
+  font-size: 20px;
+  width: 120px;
+  height: 55px;
+  background-color: #00a95cff;
+  border-radius: 10px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-right: 80px;
+}
+
+
+
+button:hover{
+    background-color: rgb(10, 213, 54);
+}
+
+
+
+
+
+
+/************ CORPO  ************/
+
+.container{
+
+    display: flex;
+    margin:  0 13%;
+    /* margin-top: 20px; */
+
+    width: 70vw;
+    height: 80vh;
+    
+    
+}
+
+.containerTexto{
+
+    margin-top: 200px;
+    width: 110%;
+    height: 100%;
+    font-size: 20px;
+    color: black;
+}
+
+.fotoFinancas{
+
+    width: 158%;
+    height:99%;
+}
+
+h1{
+    text-align: center;
+}
+
+.missao{
+
+    /* margin-top: 50px; */
+    text-align: center;
+    font-size: 36px;
+    color: black;
+    background-color: aliceblue;
+    width: 100%;
+    height: 10vh;
+}
+
+
+.logo2{
+    width: 147px;
+    border-radius: 50px;
+    margin-top: 30px;
+}
+
+
+.beneficios{
+
+  /* margin-top: 50px; */
+  text-align: center;
+    font-size: 36px;
+    color: black;
+    background-color: aliceblue;
+    width: 100%;
+    height: 23vh;
+}
+
+.imperio{
+    color: beige;
+}
+
+span{
+    color: #00a95cff;
+
+}
+
+
+@font-face{
+    font-family: "FonteMissao";
+    src: url("./Doto-VariableFont_ROND\,wght.ttf");
+}
+
+.missao p{
+
+   font-family:"FonteMissao"; 
+}
+
+/************* grid**************/
+.grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            width: 90%;
+            height: 100%;
+            margin: 0 auto;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 12px;
+            padding: 24px;
+            /* min-height: 200px; */
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .card.green {
+            background-color: #00D37F;
+            color: white;
+        }
+
+        .card-header {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            margin-bottom: 8px;
+        }
+
+        .icon {
+         
+            height: 64px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card-title {
+            font-size: 1.9rem;
+            font-weight: 600;
+        }
+
+        .card-description {
+            font-size: 1.6rem;
+            line-height: 1.5;
+            opacity: 0.9;
+        }
+
+        @media (max-width: 768px) {
+            .grid-container {
+                grid-template-columns: 1fr;
+            }
+        }
+
+
+
+        /************* sobre nos********************/
+
+     hr{
+
+        margin-top: 50px;
+        width:79%;
+        margin-left: 10%;
+       
+     }
+        
+        .org-chart {
+            max-width: 1200px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .ceo-container {
+            margin-bottom: 60px;
+        }
+
+        #executives-container {
+            display: flex;
+            justify-content: center;
+            gap: 180px;
+            flex-wrap: wrap;
+        }
+
+        .profile-card {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 250px;
+        }
+
+        .profile-image-container {
+            width: 180px;
+            height: 180px;
+            margin-bottom: 15px;
+            transform: rotate(45deg);
+            overflow: hidden;
+            background: #1a237e;
+            border-radius: 24px;
+        }
+
+        .profile-image {
+            width: 260px;
+            height: 240px;
+            transform: rotate(-45deg) translate(-12px, -40px);
+            object-fit: cover;
+            filter: grayscale(100%);
+           
+        }
+
+        .profile-image-ygor{
+
+            width: 260px;
+            height: 240px;
+            transform: rotate(-45deg) translate(-10px, -58px);
+            object-fit: cover;
+            filter: grayscale(100%);
+            margin-left: 26px;
+        }
+
+        .name {
+            color: #1a237e;
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+
+        .title {
+            color: #ffffff;
+            background-color: #1a237e;
+            padding: 10px 20px;
+            border-radius: 4px;
+            font-size: 1.0rem;
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #666;
+            font-size: 0.8rem;
+            margin-bottom: 15px;
+        }
+
+        .linkedin-icon {
+            color: #0077b5;
+            font-size: 1.5rem;
+            text-decoration: none;
+        }
+
+        @media (max-width: 1100px) {
+            #executives-container {
+                gap: 20px;
+            }
+            .profile-card {
+                width: 220px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            #executives-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .profile-card {
+                margin-bottom: 40px;
+            }
+        }
+/********************footer****************/
+
+
+footer{
+    background-color: black;
+    height: 20vh;
+    color: antiquewhite;
+    text-align: center;
+    font-size: 20px;
+    
+
+}
+
+
+
+.btn-social{
+margin-right: 40%;
+margin-top: 4%;
+display: flex;
+
+
+/* justify-content: right; */
+
+}
+
+.btn-social button{
+margin-top: 25px;
+
+}
+
+.logoRodaPe{
+
+    width: 80px;
+    height: 80px;
+}
+
+.rodapeLogo{
+
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 650px;
+  margin-top: 50px;
+
+
+}
+
+.rodape4{
+    margin-top: 50px;
+    margin-left: 110px;
+}
+   
+   
+.imperio2{
+
+  margin-top: 20px;
+  margin-left: 20px;
+  display: flex;
+
+}
+
+#link-topo{
+
+    text-decoration: none;
+    color:white;
+    background-color: #00a95cff;
+    padding: 12px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+    border-radius: 12px;
+
+}
+   
+   </style>
+</head>
+<body>
+    <header id="header">
+      
+          <div class="logo">
+            <img src="./IMG/logo.png" alt="logo">
+            <h2 class="imperio">Imperio <span>Finanças</span> </h2>
+          </div> <!--logo-->
+           
+          <nav class="menu-desktop"> 
+            
+              <!-- <a href="#">Login |</a> -->
+              <a href="#executives-container">Sobre Nós </a>
+              <a href="">|</a>
+              <a href="#"> Fale Conosco</a>
+             
+            
+          </nav>
+           <button> Login</button>
+       
+    </header>
+
+
+    <main>
+        <div class="container">
+            <div class="containerTexto">
+               <h1>Finanças</h1><br>
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum quam dolor, earum quos quae accusamus <br> alias repellat excepturi in perspiciatis laudantium <br>voluptates unde ab doloribus eius dicta cumque odit! Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>Iure earum error voluptate doloremque eius debitis<br> libero, vero maiores recusandae molestias! Porro eveniet voluptate sequi facilis tempora aperiam consequatur repellendus mollitia.</p>
+                
+            </div >
+      
+             <div>
+                <img class="fotoFinancas" src="https://picpay.com/_next/image?url=%2Fassets%2Fimages%2Foportunidades-de-emprego-e-carreiras%2Fhero-banner.webp&w=1920&q=100" alt="imagem2">
+      
+             </div>
+          </div>
+    </main>
+     <div class="missao">
+         <!-- <h2>Sobre ns</h2> -->
+          <!-- <img class="logo2" src="./IMG/missao-removebg-preview.png" alt="logo2"> -->
+        
+           <p style="font-family:FonteMissao"> <strong>Nossa missão é ser o seu controle financeiro definitivo,</strong>  <STRONG> <span style="font-family: 'Courier New', Courier, monospace;">GRATUITO</span> pra sempre!</STRONG>
+            </p> 
+      
+     </div>
+     <br><br><br><br>
+
+     <div class=" diversidade">
+         <h3>diversidade</h3>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A atque facere, dolorem corporis quos quam sit fugit suscipit vero optio non vel pariatur quas delectus cum necessitatibus reiciendis ducimus debitis</p> <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat in ullam iusto eveniet quibusdam itaque ducimus neque illo? Totam praesentium error amet minus excepturi incidunt minima quibusdam asperiores, doloribus modi.</p>
+
+    </div><br><br>
+
+    <div class="grid-container">
+        <div class="card">
+            <div class="card-header">
+                <div class="icon">📊</div>
+                <h2 class="card-title">Orçamentos mensais</h2>
+            </div>
+            <p class="card-description">
+                Crie seu planejamento financeiro, definindo limites de gastos e alertas, para garantir que você terá disciplina para conquistar seu plano!
+            </p>
+        </div>
+
+        <div class="card green">
+            <div class="card-header">
+                <div class="icon">⬇️</div>
+                <h2 class="card-title">Objetivos</h2>
+            </div>
+            <p class="card-description">
+                Seja qual for o seu sonho, o Minhas Economias ajuda a planejá-lo. Define e acompanhe seus objetivos no app!
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <div class="icon">💳</div>
+                <h2 class="card-title">Gerenciamento de Contas e Cartões</h2>
+            </div>
+            <p class="card-description">
+                Integre suas contas e cartões, de forma automática ou manual, para saber tudo que está acontecendo com o seu dinheiro!
+            </p>
+        </div>
+
+        <div class="card green">
+            <div class="card-header">
+                <div class="icon">🏠</div>
+                <h2 class="card-title">Dashboard</h2>
+            </div>
+            <p class="card-description">
+                Tenha acesso às análises dos seus gastos por período e pelas categorias mais relevantes, recebendo insights para melhorar sua vida financeira!
+            </p>
+        </div>
+
+        <div class="card">
+            <div class="card-header">
+                <div class="icon">🔄</div>
+                <h2 class="card-title">Categorização</h2>
+            </div>
+            <p class="card-description">
+                Atribua categorias, subcategorias, tags e membros da família às suas transações para ter uma gestão financeira mais detalhada e personalizada! E você ainda consegue criar regras para isso acontecer de forma automática!
+            </p>
+        </div>
+
+        <div class="card green">
+            <div class="card-header">
+                <div class="icon">📱</div>
+                <h2 class="card-title">Extrato</h2>
+            </div>
+            <p class="card-description">
+                Tenha toda a sua vida financeira consolidada em um só lugar e consulte suas transações com diversos filtros personalizados!
+            </p>
+        </div>
+    </div>
+    <hr>
+  <br> <br> <br>
+    
+
+   <h1>Nossa Equipe</h1><br><br><br><br><br>
+    <div class="org-chart">
+
+        <!-- <div class="ceo-container">
+            <div class="profile-card">
+                <div class="profile-image-container">
+                    <img src="/api/placeholder/250/250" alt="Edson Jacintho da Silva" class="profile-image">
+                </div><br>
+                <h2 class="name">Patrick</h2>
+                <div class="title">CEO - Chief Executive Officer</div>
+                <div class="subtitle">DBA</div>
+                <a href="#" class="linkedin-icon">in</a>
+            </div>
+        </div> -->
+
+        <!-- Executives Section -->
+        <div id="executives-container">
+            <!-- patrick -->
+            <div class="profile-card">
+                <div class="profile-image-container">
+                    <img src="./IMG/Patrick.jpeg" alt="Patrick" class="profile-image">
+                </div><br>
+                <h3 class="name">Patrick dos Santos Braz </h3>
+                <div class="title">Back-And e Front-And</div>
+                <a href="https://www.linkedin.com/in/patrick-braz-08a279115/" class="linkedin-icon">in</a>
+            </div>
+
+            <!-- luiz -->
+            <div class="profile-card">
+                <div class="profile-image-container">
+                    <img src="./IMG/Armendro.jpeg" alt="Luiz" class="profile-image">
+                </div> <br>
+                <h3 class="name">Luiz Felipe Armendro </h3>
+                <div class="title">Back-And e Front-And</div>
+                <a href="https://www.linkedin.com/in/luiz-felipe-dias-armendro-07240a260/
+                " class="linkedin-icon">in</a>
+            </div>
+
+      
+            <!-- ygor -->
+            <div class="profile-card">
+                <div class="profile-image-container">
+                    <img src="./IMG/Ygor.jpeg" alt="Ygor" class="profile-image-ygor">
+                </div><br>
+                <h3 class="name">Ygor Ribeiro da Silva</h3>
+                <div class="title">Front-And</div>
+                <a href="https://www.linkedin.com/in/ygor-ribeiro-da-silva-71553b255/" class="linkedin-icon">in</a>
+            </div>
+
+         
+            <!-- <div class="profile-card">
+                <div class="profile-image-container">
+                    <img src="/api/placeholder/250/250" alt="Gláucio Cardoso" class="profile-image">
+                </div>
+                <h3 class="name">Gláucio Cardoso</h3>
+                <div class="title">CFO - Chief Financial Officer</div>
+                <a href="#" class="linkedin-icon">in</a>
+            </div> -->
+        </div>
+    </div><br><br>
+
+    <footer>
+ 
+        <div class="btn-social">
+            <div class="rodapeLogo">
+              <img class="logoRodaPe" src="./IMG/logo.png" alt="logo-rodapé">
+              <h2 class="imperio2">Imperio <span>Finanças</span> </h2>
+            </div>
+            <!-- <a href="#"><button><i class="bi bi-instagram"></i></button></a>Colocando a imagens do instagram -->
+            <!-- <a href="#"><button><i class="bi bi-facebook"></i></button></a>Colocando a imagens do facebook -->
+          
+            
+            
+           <!-- <a href="#"><button><i class="bi bi-linkedin"></i></button></a>Colocando a imagens do linkdin-->
+      
+           <!-- <div class="rodape2"> -->
+            <div class="rodape4">
+                <p>© 2024 Imperio Finanças Ltda  <br>
+   
+               R.Barão de Melgaço, 3560 - , Cuiabá - MT, 78005-300</p>
+             </div><!--btn-social-->
+           </div>
+       
+           <a id="link-topo" href="">&#9650;</a> 
+    </footer>
+   
+    <script src="menu.js"></script>
+</body>
+</html>
